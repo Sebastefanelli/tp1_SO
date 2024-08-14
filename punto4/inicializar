@@ -1,0 +1,17 @@
+if pgrep -x "pa" > /dev/null
+then
+	pkill -x "pa"
+	echo "./pa detenido"
+else 
+	echo "./pa no esta corriendo"
+fi
+
+
+
+gcc -Wall -o crear crearsem.c
+gcc -Wall -o init initsem.c
+gcc -Wall -o ver versem.c
+
+./crear
+./init
+./ver

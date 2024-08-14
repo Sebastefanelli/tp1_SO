@@ -1,0 +1,7 @@
+./pa &
+
+konsole -e ./pb & 
+
+konsole -e ./pc &
+
+

@@ -1,0 +1,19 @@
+
+echo "compilando proyecto"
+
+gcc PyV.c -Wall -g -c
+gcc pa.c -Wall -g -c
+gcc pb.c -Wall -g -c
+gcc pc.c -Wall -g -c
+
+
+
+gcc -Wall -g PyV.o pa.o -o pa
+gcc -Wall -g PyV.o pb.o -o pb
+gcc -Wall -g PyV.o pc.o -o pc
+
+
+
+
+echo "compilacion completa"
+
