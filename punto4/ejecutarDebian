@@ -1,0 +1,25 @@
+if pgrep -x "pa" > /dev/null
+then
+	pkill -x "pa"
+	echo "./pa detenido"
+else 
+	echo "./pa no esta corriendo"
+fi
+
+
+# Verifica que se pase el número de iteraciones
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <numero_de_iteraciones>"
+    exit 1
+fi
+
+ITERATIONS=$1
+
+
+./pa $ITERATIONS &
+
+konsole -e ./pb $ITERATIONS & 
+
+konsole -e ./pc $ITERATIONS &
+
+

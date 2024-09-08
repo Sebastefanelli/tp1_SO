@@ -1,7 +1,16 @@
-./pa &
+#!/bin/bash
 
-konsole -e ./pb & 
+# Verifica que se pase el número de iteraciones
+if [ "$#" -ne 1 ]; then
+    echo "Usage: $0 <numero_de_iteraciones>"
+    exit 1
+fi
 
-konsole -e ./pc &
+ITERATIONS=$1
 
+./pa $ITERATIONS &
+
+gnome-terminal -- ./pb $ITERATIONS & 
+
+gnome-terminal -- ./pc $ITERATIONS &
 
