@@ -79,3 +79,10 @@ Estos puntos cubren el uso de procesos, señales, sincronización con mutex y se
 manejo de sockets, y creación de un servidor CGI, siempre con el objetivo de evitar
 procesos huérfanos o zombies y asegurar una correcta sincronización entre procesos o
 hilos.
+
+en caso de que surja algun inconveniente con el cgi ir a la carpeta src y ejecutar        ./cg1.sh lo cual deberia arreglar el monitor.cgi y deberia funcinar como es debido
+
+![procesos](imagenes/procesos.png)
+![memoria](imagenes/memoria.png)
+![disco](imagenes/disco.png)
+![ipc](imagenes/ipc.png)
