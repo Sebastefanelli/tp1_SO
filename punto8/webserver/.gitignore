@@ -13,7 +13,6 @@ config.*
 autom4te.cache/
 src/.deps/
 m4/
-cgi-bin/.libs/
 src/.libs/
 wserver/.libs/
 # only ignore the following files only in the current directory
